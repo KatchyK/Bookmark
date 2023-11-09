@@ -1,0 +1,167 @@
+html,body{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppns, sans-serif;
+}
+:root{
+    --login-color: #FA5757;
+    --text-color: #ffffff;
+    --p-color: #A394A1;
+    --button-color:#5368DF;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;   
+}
+nav button{
+    background-color:var(--login-color);
+    color: var(--text-color);
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px; 
+    border-style: none;
+}
+main> div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+main h1{
+    font-size: 50px;
+    width: 90%;
+    margin-left: 40px ; 
+    padding-top: 15px;
+}
+main p{
+    font-size: 15px;
+    color: var(--p-color);
+    width: 80%;
+    margin-left: 40px ;
+    padding-top: 15px;
+    line-height: 20px;
+}
+.button{
+    margin-left: 40px ;
+    padding-top: 15px;
+}
+main img{
+    width: 60%;
+    padding-top: 50px;
+}
+.chrome{
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+.fox{
+    margin-left: 10px;
+    border: none;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+#Features{
+
+}
+#Features head{
+    text-align: center;
+}
+.switch{
+    display: flex;
+    align-items: center;
+}
+#Download > div{
+    text-align: center;
+}
+#Download .head{
+    width: 30%;
+    margin: 20px 500px;
+}
+.extension{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin: 30px 300px;
+    width: 60%;
+}
+.page {
+    box-shadow: 5px 5px 5px gray;
+    text-align: center;
+    padding: 10px 5px;
+    line-height: 25px;
+    width: 100%;
+}
+.page p{
+    border-bottom: 3px dashed gray;
+    margin: 10px 20px;
+    padding-bottom: 10px;
+}
+section{
+    
+}
+#FAQ .head{
+    text-align: center;
+    width: 30%;
+    margin: 30px 450px;
+}
+.bigger{
+    text-align: center;
+}
+#email{
+    text-align: center;
+    background-color: var(--button-color);
+    padding: 50px;
+    line-height: 20px;
+    color: #ffffff;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #252B46;
+}
+.logo, ul{
+    display: flex;
+    align-items: center;
+    gap: 30px ;
+    color: var(--text-color);
+    
+}
+.logo img{
+    filter: invert(.3);
+}
+.logo a{
+    color: var(--text-color);
+}
+.icon a{
+    color: var(--text-color);
+    grid-area: 10px;
+}
