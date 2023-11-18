@@ -138,6 +138,7 @@ main .chrome{
     border: none;
     padding: 12px 10px;
     border-radius: 5px;
+    margin: 5px auto;
 }
 .extension{
     display: grid;
