@@ -18,6 +18,10 @@
             </ul>
             <button>Login</button>
         </div>
+        <div class="toggler">
+            <i class="ri-menu-line"></i>
+            <i class="ri-close-line"></i>
+        </div>
     </nav>
     <main>
         <div>
@@ -39,21 +43,27 @@
                 <h4>Features</h4>
                 <p>Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
             </div>
+             <div class="header">
+                <button class="jjj nnhg nhfr vgy">Simple Bookmarking</button>
+                <button>Speedy Searching</button>
+                <button>Easy Sharing</button>
+            </div>
 
-            <div class="switch">
-                <div>
-                    <div><button>Simple Bookmarking</button></div>
-                    <img src="images/illustration-features-tab-1.svg" alt="">
-                </div>
-                <div>
-                    <h3>Bookmark in one click.</h3>
-                    <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                    <button class="chrome">More Info</button>
+
+            <div class="features">
+                <div class="switch">
+                    <div>
+                        <img src="images/illustration-features-tab-1.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Bookmark in one click.</h3>
+                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+                        <button class="chrome">More Info</button>
+                    </div>
                 </div>
             </div>
-            <div class="switch">
+            <!-- <div class="switch">
                 <div>
-                    <div><button>Speedy Searching</button></div>
                     <img src="images/illustration-features-tab-2.svg" alt="">
                 </div>
                 <div>
@@ -62,9 +72,8 @@
                     <button class="chrome">More Info</button>
                 </div>
             </div>
-            <div class="switch">
+            <div class="switchs">
                 <div>
-                    <div><button>Easy Sharing</button></div>
                     <img src="images/illustration-features-tab-3.svg" alt="">
                 </div>
                 <div>
@@ -72,7 +81,7 @@
                     <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
                     <button class="chrome">More Info</button>
                 </div>
-            </div>
+            </div> -->
            
 
     </section>
@@ -104,26 +113,35 @@
     </section>
     <section id="FAQ">
         <div class="head">
-            <h3>Frequently Asked Questions</h3>
+           <h3>Frequently Asked Questions</h3> 
             <p>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>
         </div>
-        <div>
-            <p class="bigger">What is Bookmark?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae. Porro amet facilis odit, iste facere, dolor soluta libero ducimus quia praesentium repudiandae doloremque qui!</p>
+        <div class="questions">
+            <div class="toggle">
+                <p class="bigger">What is Bookmark?</p> 
+                <i class="ri-arrow-drop-down-line"></i>
+            </div>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae.</p>
         </div>
-        <div>
-            <p class="bigger">How can I request a new browser?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae. Porro amet facilis odit, iste facere, dolor soluta libero ducimus quia praesentium repudiandae doloremque qui!</p>
+        <div class="questions ">
+            <div class="toggle">
+                <p class="bigger">How can I request a new browser?</p>
+                <i class="ri-arrow-drop-down-line"></i></div>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae.</p>
+            </div>
+        <div class="questions">
+            <div class="toggle">
+                <p class="bigger">Is there a mobile app?</p> 
+                <i class="ri-arrow-drop-down-line"></i></div>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae.</p>
         </div>
-        <div>
-            <p class="bigger">Is there a mobile app?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae. Porro amet facilis odit, iste facere, dolor soluta libero ducimus quia praesentium repudiandae doloremque qui!</p>
+        <div class="questions">
+            <div class="toggle">
+                <p class="bigger">What about other Chromium browsers?</p>
+                <i class="ri-arrow-drop-down-line"></i></div>
+            <p class="answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae.</p>
         </div>
-        <div>
-            <p class="bigger">What about other Chromium browsers?</p>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique natus animi porro non ratione recusandae. Porro amet facilis odit, iste facere, dolor soluta libero ducimus quia praesentium repudiandae doloremque qui!</p>
-        </div>
-        <button class="chrome">More Info</button>
+        <button class="more">More Info</button>
     </section>
     <section id="email">
         <div>
@@ -137,19 +155,26 @@
     </section>
     <footer>
 
-            <div class="logo">
-                <img src="images/logo-bookmark.svg" alt="">
-                <ul>
-                    <a href="#">FEATURES</a>
-                    <a href="#">PRICING</a>
-                    <a href="#">CONTACT</a>
-                </ul>
+        <div class="logo">
+            <div>
+                            <img src="images/logo-bookmark.svg" alt="">
+
             </div>
-            <div class="icon">
-                <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-                <a href="#"><i class="ri-twitter-fill"></i></a>
-            </div>
+        <div>
+            <ul>
+            <a href="#">FEATURES</a>
+            <a href="#">PRICING</a>
+            <a href="#">CONTACT</a>
+            </ul>
+        </div>
+       
+        <div class="icon">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
+    </div>&copy; <span class="newYear">qwertyu</span> </p>
     </footer>
+    <script src="js/main.js"></script>
     
 </body>
 </html>

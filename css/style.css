@@ -45,6 +45,9 @@ nav button{
     border-radius: 5px; 
     border-style: none;
 }
+.toggler{
+    display: none;
+}
 main> div{
     display: flex;
     align-items: center;
@@ -73,12 +76,27 @@ main img{
     width: 60%;
     padding-top: 50px;
 }
-.chrome{
+main .chrome{
     background-color: var(--button-color);
     color: var(--text-color);
     border: none;
     padding: 12px 10px;
     border-radius: 5px;
+}
+#Features .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+#Features .chrome{
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 10px;
+    border-radius: 5px;
+    margin-left: 130px;
 }
 .fox{
     margin-left: 10px;
@@ -86,22 +104,40 @@ main img{
     padding: 12px 10px;
     border-radius: 5px;
 }
-#Features{
+#Features .head p{
+    color: var(--p-color);
 
 }
-#Features head{
+#Features .head{
     text-align: center;
+    width: 30%;
+    margin: 10px auto;
+    line-height: 1.5em;
 }
 .switch{
     display: flex;
     align-items: center;
+    padding: 20px 50px;
+}
+.switch p{
+    color: var(--p-color);
+}
+.switchs{
+    display: none;
 }
 #Download > div{
     text-align: center;
 }
 #Download .head{
-    width: 30%;
-    margin: 20px 500px;
+    width: 50%;
+    margin: 20px auto;
+}
+#Download button{
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 10px;
+    border-radius: 5px;
 }
 .extension{
     display: grid;
@@ -123,16 +159,56 @@ main img{
     margin: 10px 20px;
     padding-bottom: 10px;
 }
-section{
-    
-}
 #FAQ .head{
     text-align: center;
     width: 30%;
-    margin: 30px 450px;
+    margin: 30px auto;
 }
+.toggle{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.toggle i{
+    font-size: 40px;
+    color: var(--button-color);
+    /* transform: rotate(180deg); */
+}
+
+#FAQ .questions {
+    width:35%;
+    /* text-align: center; */
+    margin: 0px auto;
+    padding: 10px 0;
+    border-top: 2px solid darkblue ;
+    border-bottom: 2px solid darkblue ;
+}
+.questions .answer{
+    display: none;
+}
+.questions.show .answer{
+    display: block;
+}
+.questions.arrow .ri-arrow-drop-down-line{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+.questions .ri-arrow-drop-down-line{
+    /* transform: rotate(180deg); */
+    transition: 0.5s;
+}
+
 .bigger{
-    text-align: center;
+    /* text-align: center; */
+}
+.more{
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    padding: 12px 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    display: block;
 }
 #email{
     text-align: center;
@@ -141,7 +217,24 @@ section{
     line-height: 20px;
     color: #ffffff;
 }
-footer{
+#email button{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #FA5757;
+}
+input, button{
+    border-radius: 20px;
+    padding: 10px;
+}
+.switch p, h3{
+    width: 70%;
+    margin: 10px auto;
+}
+   
+.chrome{
+    margin: 10px 0 0 130px;
+}
+footer .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -164,4 +257,167 @@ footer{
 .icon a{
     color: var(--text-color);
     grid-area: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    main h1{
+        font-size: 40px;
+    }
+    main img{
+        padding: 0;
+        width: 57%;
+    }
+    .extension{
+        margin: 20px 30px;
+    }
+    #Download .head{
+        margin: 20px 270px;
+    }
+    main p{
+        width: 90%;
+    }
+    .chrome{
+        margin: 10px auto;
+    }
+    #Features .head{
+        width: 50%;
+    }
+    .extension{
+        width: 90%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 20px 35px;
+        gap: 10px;
+    }
+    main> div{
+        padding: 15px;
+    }
+    main h1{
+        font-size: 25px;
+        width: 100%;
+        margin-left: 15px;
+    }
+    main p{
+        margin-left: 15px;
+        width: 100%;
+    }
+    .button{
+        margin-left: 15px;
+        font-size: 15px;
+        width: 100%;
+    }
+    .switch img{
+        width: 150%;
+    }
+    .switch h3{
+        margin: 10px 0 0 120px;
+    }
+    .switch p{
+        margin: 10px 0 0 120px   
+    }
+    #Download .head{
+        width: 60%;
+        margin: 20px auto;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    nav button{
+        display: none;
+    }
+    .toggler{
+        display: block;
+    }
+    .ri-close-line{
+        display: none;
+    }
+    nav ul{
+        position: fixed;
+        top: -40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        background-color: var(--button-color);
+        box-shadow: 0 0 8px #333;
+        width: 60%;
+        text-align: center;
+        padding: 20px;
+        transition: 1s;
+        z-index: 1;
+    }
+    main> div{
+        flex-direction: column-reverse;
+    }
+    .word{
+        text-align: center;
+    }
+    .button{
+        text-align: center;
+    }
+    #Features .head{
+        width: 70%;
+    }
+    #Download .head{
+        width: 80%;
+    }
+    .extension{
+        margin: 20px 15px;
+        gap: 25px;
+    }
+    .page{
+        width: 110%;
+    }
+    #FAQ .head{
+        width: 85%;
+    }
+    #FAQ .questions p{
+        width: 80%;
+    }
+    footer{
+        justify-content: center;
+    }
+    footer .logo{
+        flex-direction: column-reverse;
+    }.logo ul{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    main h1, main p, main .button{
+        margin-left: 0;
+    }
+    #Features .head{
+        width: 90%;
+    }
+    .switch{
+        flex-direction: column;
+    }
+    .switch img{
+        width: 110%;
+
+    }
+    .switch h3{
+        text-align: center;
+        margin: 10px;
+    }
+    .switch p{
+        width: 100%;
+        margin: 10px;
+        text-align: center;
+    }
+    .extension{
+        grid-template-columns: repeat(1 ,1fr);
+        width: 80%;
+    }
+    #email h3{
+        width: 100%;
+    }
+
 }
